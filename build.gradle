@@ -63,6 +63,11 @@ subprojects {
 
 project(':fuzzywuzzy') {
     version '2.0.0'
+
+    dependencies {
+        // do not update this! this is the last standalone Trie version
+        api 'org.comroid:common-util-trie:1.0.0'
+    }
 }
 
 project(':levenshtein') {
